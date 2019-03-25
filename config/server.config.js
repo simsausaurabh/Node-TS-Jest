@@ -16,7 +16,7 @@ module.exports = {
     ],
     coverageReporters: ["json", "lcov", "text", "clover"],
     moduleFileExtensions: [ ...defaults.moduleFileExtensions, "ts", "tsx", "js", "jsx", "json", "node"],
-    moduleDirectories: ["<rootDir>/../node_modules", "<rootDir>/../src"],
+    moduleDirectories: ["node_modules", "src"],
     roots: ["<rootDir>/../src"],
     globals: {
       "ts-jest": {

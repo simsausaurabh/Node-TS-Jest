@@ -1,14 +1,17 @@
-import { greeter, sum } from "./greet";
+import { greeter, sum, greet } from "./greet";
 
 const message = "Saurabh";
 
 describe("TEST", () => {
     it("test greeting message", () => {
-        const messageReceived = greeter(message);
-        expect(message).toEqual(messageReceived);    
+        expect(greeter(message)).toBeDefined();    
     });
 
     it("test sum of two numbers", () => {
-        expect(10).toEqual(sum(2, 3));    
+        expect(sum(2, 3)).toBeDefined()
     });
+
+    it("class task should be callable", () => {
+        expect(new greet(2, 3)).toBeDefined();
+    })
 });
