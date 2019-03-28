@@ -5,7 +5,7 @@ module.exports = {
     transform: {
         "^.+\\.tsx?$": "ts-jest"
     },
-    testMatch: ['<rootDir>/../src/greet.test.ts'],
+    testMatch: ["<rootDir>/../src/greet.test.ts"],
     testEnvironment: "node",
     verbose: true,
     // To extract coverage while tests are executed, we can make it false to not to extract coverage while running tests

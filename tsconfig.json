@@ -3,12 +3,17 @@
     "target": "es6",
     "module": "commonjs",
     "outDir": "dist",
-    "sourceMap": true
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "strict": false,
+    "declaration": true,
+    "inlineSources": true,
+    "types": ["node", "jasmine"]
   },
   "include": [
-    "src/**/*.ts", "greet.test.ts"
+    "src/**/*",
   ],
   "exclude": [
-    "./node_modules"
+    "/node_modules/@types/**/*"
   ]
 }
